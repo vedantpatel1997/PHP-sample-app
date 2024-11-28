@@ -35,7 +35,7 @@ This README provides instructions to configure a PHP application running in an A
      # Allow larger upload sizes
      client_max_body_size 50M;
      ```
-   - ![Edited text for default.conf file](image-2.png)
+   - ![Edited text for default.conf file](/Screenshots/image-2.png)
 
 ---
 
@@ -46,7 +46,7 @@ This README provides instructions to configure a PHP application running in an A
      ```bash
      nano /home/dev/startup.sh
      ```
-   - ![Location of startup.sh and default.conf inside home/dev](image-1.png)
+   - ![Location of startup.sh and default.conf inside home/dev](/Screenshots/image-1.png)
    - Add the following script:
      ```bash
      #!/bin/bash
@@ -58,7 +58,7 @@ This README provides instructions to configure a PHP application running in an A
      # Reload Nginx to apply the changes
      nginx -s reload
      ```
-   - ![Content of startup.sh](image-3.png)
+   - ![Content of startup.sh](/Screenshots/image-3.png)
    - Save the file and exit.
 
 
@@ -70,7 +70,7 @@ This README provides instructions to configure a PHP application running in an A
      /home/dev/startup.sh
      ```
    - Save the changes.
-   - ![Startup Command Configuration](image.png)
+   - ![Startup Command Configuration](/Screenshots/image.png)
 ---
 
 ### Step 3: Modify PHP Configuration
@@ -84,7 +84,7 @@ This README provides instructions to configure a PHP application running in an A
      ```bash
      mkdir ini
      ```
-   - ![Location of extension.ini file](image-4.png)
+   - ![Location of extension.ini file](/Screenshots/image-4.png)
    - Inside the `ini` folder, create `extensions.ini`:
      ```bash
      nano ini/extensions.ini
@@ -93,14 +93,14 @@ This README provides instructions to configure a PHP application running in an A
      ```ini
      upload_max_filesize=50M
      ```
-   - ![Content of extension.ini](image-5.png)
+   - ![Content of extension.ini](/Screenshots/image-5.png)
 
 2. **Add the Environment Variable:**
    - In the Azure Portal, go to **Configuration** > **Application Settings**.
    - Add a new setting:
      - Name: `PHP_INI_SCAN_DIR`
      - Value: `/home/site/wwwroot/ini`
-   - ![Environment variable setting](image-6.png)
+   - ![Environment variable setting](/Screenshots/image-6.png)
    - Save the changes.
 
 ---
