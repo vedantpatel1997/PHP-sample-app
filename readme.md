@@ -1,6 +1,4 @@
-Here’s the corrected **README.md** with Step 1 properly formatted and not inside the code block:
 
-```markdown
 # Configure Azure Linux Web App to Allow Larger File Uploads for PHP Applications
 
 This README provides instructions to configure a PHP application running in an Azure Linux Web App to support larger file uploads. The setup includes customizing Nginx and PHP configurations.
