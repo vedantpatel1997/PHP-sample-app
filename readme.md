@@ -17,12 +17,15 @@ This README provides instructions to configure a PHP application running in an A
    - In the Azure Portal, navigate to your Web App.
    - Select **SSH** from the Development Tools.
 
-2. **Backup the Default Nginx Configuration:**
+2. **Create the `dev` Folder (if not already created):**
+   - In SSH, create a directory named `dev` under `/home` if it doesn’t already exist:
+
+3. **Backup the Default Nginx Configuration:**
    ```bash
    cp /etc/nginx/sites-enabled/default /home/dev
    ```
 
-3. **Modify the `default` Configuration File:**
+4. **Modify the `default` Configuration File:**
    - Navigate to `/home/dev`:
      ```bash
      cd /home/dev
@@ -64,7 +67,7 @@ This README provides instructions to configure a PHP application running in an A
      /home/dev/startup.sh
      ```
    - Save the changes.
-
+![alt text](image.png)
 ---
 
 ### Step 3: Modify PHP Configuration
@@ -117,4 +120,3 @@ This README provides instructions to configure a PHP application running in an A
 ---
 
 By following this guide, your PHP application will support larger file uploads while maintaining best practices in configuration and debugging.
-```
