@@ -5,10 +5,8 @@ This README provides instructions to configure a PHP application running in an A
 
 ## Prerequisites
 
-1. A PHP application deployed to an **Azure Linux Web App**.
+1. A PHP application deployed to an **Azure Linux Web App** running on php8.3.
 2. Access to the **Azure Portal** and **Kudu/SSH** for the Web App.
-
-
 
 
 ## Steps to Configure
@@ -57,12 +55,8 @@ This README provides instructions to configure a PHP application running in an A
      ```
    - Save the file and exit.
 
-2. **Make the Script Executable:**
-   ```bash
-   chmod +x /home/dev/startup.sh
-   ```
 
-3. **Set the Script as the Startup Command:**
+2. **Set the Script as the Startup Command:**
    - In the Azure Portal, go to your Web App.
    - Navigate to **Configuration** > **General Settings** > **Startup Command**.
    - Set the startup command to:
@@ -114,37 +108,13 @@ This README provides instructions to configure a PHP application running in an A
 
 1. **Test File Upload:**
    - Deploy a sample PHP application with a file upload form.
-   - Test uploading a file larger than 2MB (e.g., 30MB).
+   - Test uploading a file larger than 2MB (e.g., 50MB).
 
 2. **Verify PHP Settings:**
    - Add a `phpinfo()` script to your app and verify `upload_max_filesize` is updated.
 
-3. **Check Logs:**
-   - If issues occur, inspect Nginx logs:
-     ```bash
-     tail -f /var/log/nginx/error.log
-     ```
-
----
-
-## Notes
-
-- **Backup Configuration Files:** Always back up original files before making changes.
-- **Debugging Startup Scripts:** Add logging statements to the `startup.sh` to capture potential errors.
-- **Environment Variables:** Manage PHP settings using environment variables for flexibility.
-
----
-
-## Screenshots to Include
-
-1. **PHP_INI_SCAN_DIR configuration** in the Azure Portal.
-2. Edited `default` file with the updated `client_max_body_size`.
-3. The `startup.sh` script content.
-4. Successful file upload using the PHP application.
 
 ---
 
 By following this guide, your PHP application will support larger file uploads while maintaining best practices in configuration and debugging.
 ```
-
-This version ensures that Step 1 is clearly outlined and not misplaced within code blocks.
