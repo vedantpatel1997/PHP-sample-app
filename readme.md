@@ -1,17 +1,3 @@
-
-# Configure Azure Linux Web App to Allow Larger File Uploads for PHP Applications
-
-This README provides instructions to configure a PHP application running in an Azure Linux Web App to support larger file uploads. The setup includes customizing Nginx and PHP configurations.
-
----
-
-## Prerequisites
-
-1. A PHP application deployed to an **Azure Linux Web App**.
-2. Access to the **Azure Portal** and **Kudu/SSH** for the Web App.
-
----
-
 ## Steps to Configure
 
 ### Step 1: Backup and Modify the Nginx Configuration
