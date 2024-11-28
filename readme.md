@@ -67,8 +67,8 @@ This README provides instructions to configure a PHP application running in an A
      /home/dev/startup.sh
      ```
    - Save the changes.
-![alt text](image.png)
 ---
+![Startup Command Configuration](image.png)
 
 ### Step 3: Modify PHP Configuration
 
