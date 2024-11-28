@@ -1,4 +1,4 @@
-Here’s a **README.md** script you can use to document the setup for your project:
+Here’s the corrected **README.md** with Step 1 properly formatted and not inside the code block:
 
 ```markdown
 # Configure Azure Linux Web App to Allow Larger File Uploads for PHP Applications
@@ -148,6 +148,6 @@ This README provides instructions to configure a PHP application running in an A
 ---
 
 By following this guide, your PHP application will support larger file uploads while maintaining best practices in configuration and debugging.
-``` 
+```
 
-This README format is clear, reusable, and can be easily shared for onboarding or reference purposes.
+This version ensures that Step 1 is clearly outlined and not misplaced within code blocks.
