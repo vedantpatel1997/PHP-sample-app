@@ -72,4 +72,5 @@ jobs:
           app-name: 'SamplePHP-avp'
           slot-name: 'Production'
           package: .
+          clean: true
           
